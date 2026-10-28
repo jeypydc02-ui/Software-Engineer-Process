@@ -1,15 +1,33 @@
+// Exercise #1
+// You order a T-shirt for $10, socks for $8, and dinner plates for $20. User JavaScript to calculate the total cost of your order and display it in the console.
 
-// Pop-ing the alert
-alert('hello');
-alert(`Good day, I'm John Paul S. Dela Cruz, a BSIT Student with specialization in Mobile and Web Application from National University of the Philippines - Manila. Actually I'm aspring Full stack developer, and I want to create a new programming language that a lot of people use it someday, thank you! I have so many skills in coding, specially JavaScript, the one that I'll master now, HTML, CSS, JAVA, REACT.js, EXPRESS & NODE.JS with the database are MYSQL, and MongoDB atlas`);
+const tshirtPrice = 10;
+const socksPrice = 8;
+const dinnerPlatesPrice = 20;
 
-//Terminlogy
- 
-let  num1 = 2026;
-let  num2 = 2004;
+const totalCost = tshirtPrice + socksPrice + dinnerPlatesPrice;
 
-console.log(` I'm ${num1 - num2} years old`);
+alert(` The total cost of my order is: $${totalCost}. T-shirt are $${tshirtPrice}, socks are $${socksPrice}, and dinner plates are $${dinnerPlatesPrice}.`);
 
 
-let b = document.querySelector('body');
-document.body.innerHTML = 'Jeypy';
+
+//Exercise #2
+// Your bank account has #100, you spend $20 on lunch, $50 on dinner, and earn $200 from your job. Calculate how much money you have.
+
+const currentBalance = 100;
+const lunchExpenses = 20;
+const dinnerExpenses = 50;
+const jobEarnings = 200;
+
+const finalBalance = currentBalance - lunchExpenses - dinnerExpenses + jobEarnings;
+
+alert(`My final balance is: $${finalBalance}. I started with $${currentBalance}, spent $${lunchExpenses} on lunch, $${dinnerExpenses} on dinner, and earned $${jobEarnings} from my job.`);
+
+
+
+//Exercise #3
+// Use document.body.innerHTML to make the webpafe blank.
+
+
+let body = document.querySelector('body');
+document.body.innerHTML = '';
